@@ -4,11 +4,11 @@ const calculateNumber = (type, a, b) => {
 	} else if (type === 'SUBTRACT'){
 		return Math.round(a) - Math.round(b);
 	} else if (type === 'DIVIDE') {
-		const roundedB = MAth.round(b);
+		const roundedB = Math.round(b);
 		if (roundedB === 0) {
 			return 'Error';
 		}
-		return MAth.round(a) / roundedB;
+		return Math.round(a) / roundedB;
 	} else {
 		throw new Error('Invalid type');
 	}
